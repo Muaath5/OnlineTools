@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محلل النص</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-tool="harakat">
+  <div class="page-wrap"
+       id="harakat-app"
+       data-label-words="عدد الكلمات"
+       data-label-lines="عدد الأسطر"
+       data-label-chars-all="عدد الأحرف (مع المسافات)"
+       data-label-chars-no-sp="عدد الأحرف (بدون المسافات)"
+       data-label-harakat="مجموع الحركات"
+       data-label-fatha="الفتحة"
+       data-label-damma="الضمة"
+       data-label-kasra="الكسرة"
+       data-label-shadda="الشدة"
+       data-label-sukun="السكون"
+       data-label-tan-fat="تنوين الفتح"
+       data-label-tan-dam="تنوين الضم"
+       data-label-tan-kas="تنوين الكسر"
+       data-label-dots="مجموع النقاط"
+       data-label-hamza="عدد الهمزات"
+       data-label-copy="نسخ"
+       data-label-copied="تم النسخ">
+    <h1>محلل النص</h1>
+    <p class="text-secondary mb-4">إحصاءات مفصلة للنص العربي مع أدوات تنظيف النص.</p>
+
+    <div class="mb-3">
+      <label for="input" class="form-label">النص</label>
+      <textarea id="input" class="form-control w-100" placeholder="اكتب أو الصق النص هنا..."></textarea>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body p-0">
+        <div id="stats"></div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="d-flex justify-content-between align-items-center mb-1">
+        <label for="out-a" class="form-label mb-0">بدون حركات</label>
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-copy-target="out-a">نسخ</button>
+      </div>
+      <textarea id="out-a" class="form-control w-100" readonly></textarea>
+    </div>
+
+    <div class="mb-3">
+      <div class="d-flex justify-content-between align-items-center mb-1">
+        <label for="out-b" class="form-label mb-0">بدون نقاط</label>
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-copy-target="out-b">نسخ</button>
+      </div>
+      <textarea id="out-b" class="form-control w-100" readonly></textarea>
+    </div>
+
+    <div class="mb-3">
+      <div class="d-flex justify-content-between align-items-center mb-1">
+        <label for="out-c" class="form-label mb-0">نص قديم</label>
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-copy-target="out-c">نسخ</button>
+      </div>
+      <textarea id="out-c" class="form-control w-100" readonly></textarea>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

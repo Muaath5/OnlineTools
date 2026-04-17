@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+body {
+  font-family: 'Amiri', serif;
+  background-color: #121212;
+}
+
+.page-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+textarea.form-control {
+  border-radius: 0;
+  border: 1px solid #2a2a2a;
+  background-color: #1a1a1a;
+  color: #dee2e6;
+  min-height: 140px;
+  resize: vertical;
+}
+
+textarea.form-control:focus {
+  background-color: #1a1a1a;
+  color: #dee2e6;
+  border-color: #3a3a3a;
+  box-shadow: none;
+}
+
+textarea.form-control[readonly] {
+  background-color: #1f1f1f;
+}
+
+textarea.form-control[readonly]:focus {
+  background-color: #1f1f1f;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 0;
+}
+
+.list-group-item {
+  background-color: #1e1e1e;
+  border-color: #2a2a2a;
+  border-radius: 0;
+  color: #dee2e6;
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+.musnad-text {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.table-panel {
+  margin-top: 1rem;
+}
+
+.table-dark {
+  --bs-table-bg: #1a1a1a;
+  --bs-table-border-color: #2a2a2a;
+}
